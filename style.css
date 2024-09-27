@@ -1,0 +1,200 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+body{
+   /* background-image: linear-gradient(to bottom right,red,rgb(172, 13, 13)) ;*/
+    background-image: linear-gradient(to left,#00B09B,#96C93D);
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+    }
+nav{
+    background-color: rgba(255, 255, 255, 0.757);
+    box-shadow: 0 3px 10px ;
+}
+.navbar{
+    display: flex;
+    margin: 0 auto;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+}
+h1{
+    color: rgb(14, 63, 0);
+}
+nav h1{
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+h2{
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+}
+.searchMenu input,button{
+                flex-grow: 1;
+                margin-right: 90px;
+                padding: 5px 10px ;
+                border-style: solid;
+                border: none;               
+                border-width: 2px;
+                border-radius: 5px;
+                font-size: 16px;
+}
+.searchMenu input,button:focus{
+    outline: none;
+}
+.searchMenu input{
+    margin-right: 10px;
+}
+.searchMenu button{
+    background-color: rgb(119, 245, 140);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.searchMenu button:hover{
+    background:rgb(67, 181, 9);
+}
+.Menu{
+    width:80%;
+    padding: 20px;
+    text-align: center;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit ,minmax(300px,1fr));
+    grid-gap: 40px;
+    place-items: center;
+}
+.Menu .recipe{
+        background: rgba(255, 255, 255, 0.527);
+        backdrop-filter: white(40px);
+}
+.recipe{
+        background-color:white;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        box-shadow: 0 5px 10px;
+        cursor: pointer;
+        max-width:350px; 
+        transition: transform 0.3s ease;
+}
+.recipe:hover{
+    transform: scale(1.1);
+}
+.recipe img{
+        padding: 10px;
+        border-radius: 30px;
+        height: 300px;
+}
+.recipe h3{
+    font-size: 20px ;
+}
+/* .recipe button{
+    border: none;
+    color: white;
+    background-color:green;
+    border-radius: 5px;
+    padding:5px;
+    font-size: 15px;
+    display: block;
+    margin: 18px auto;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+.recipe button:hover{
+    background-color: rgb(39, 108, 4);
+} */
+.menuDetails{
+    width: 40%;
+    height: 60%;
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    font-size: 20px;
+    font-weight: bold;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    background-color: rgb(117, 234, 117);
+    background: #f5fff6e2;
+    box-shadow: 0 3px 10px ;
+    backdrop-filter: green(40px);
+    border-radius: 12px;
+    overflow-y:scroll ;
+}
+.clsButton{
+    width: 30px;
+    height: 30px;
+    color: red;
+    position: absolute;
+    top: 13px;
+    right: -80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clsButton:hover{
+    color:  crimson;
+    background-color: white;
+}
+.menuDetailsContent{
+    padding: 30px;
+}
+
+.Name{
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+.ingredients li{
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+.instructions p{
+    margin-bottom: 10px;
+    line-height: 5px;
+    white-space: pre-line;
+}
+.menuDetails::-webkit-scrollbar{
+    width:10px;
+}
+.menuDetails::-webkit-scrollbar-thumb{
+    background: azure;
+    border-radius: 18px;
+    --webkit-border-radius: 18px;
+}
+@media screen and (min-width:600px) {
+    .navbar {
+        padding: 20px;
+    }
+    .logo h1 {
+        font-size: 28px;
+    }
+
+    .inputBox {
+        padding: 10px;
+        font-size: 18px;
+    }
+    h4{
+        
+        text-align: center;
+    }
+}
+footer{
+    margin-top: auto;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.757);
+    box-shadow: 0 3px 10px ;
+    color:  rgb(14, 63, 0);
+    padding-block: 15px;
+    justify-content: center;
+    
+}
